@@ -1,0 +1,27 @@
+{
+  "name": "vscode-extension-template",
+  "description": "A template repository for developing VS Code extensions using Yeoman generator-code",
+  "version": "1.0.0",
+  "author": "Ryo Hasegawa",
+  "license": "MIT",
+  "repository": "https://github.com/ryo8000/vscode-extension-template.git",
+  "keywords": [
+    "vscode",
+    "extension",
+    "template",
+    "yeoman",
+    "generator"
+  ],
+  "private": true,
+  "engines": {
+    "node": "^20.17.0 || >=22.9.0"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "start": "yo code"
+  },
+  "devDependencies": {
+    "generator-code": "1.11.18",
+    "yo": "7.0.1"
+  }
+}
