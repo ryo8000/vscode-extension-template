@@ -3,14 +3,24 @@
   "displayName": "sample-extension",
   "description": "Sample Extension",
   "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.120.0"
-  },
+  "publisher": "ryo8000",
+  "author": "Ryo Hasegawa",
+  "license": "",
+  "repository": "https://github.com/ryo8000/sample-extension.git",
+  "icon": "",
+  "keywords": [
+    "sample",
+    "extension"
+  ],
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "private": true,
+  "engines": {
+    "vscode": "^1.120.0"
+  },
   "main": "./dist/extension.js",
+  "activationEvents": [],
   "contributes": {
     "commands": [
       {
