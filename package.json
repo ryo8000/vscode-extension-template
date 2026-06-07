@@ -1,0 +1,22 @@
+{
+  "name": "vscode-extension-template",
+  "description": "",
+  "version": "1.0.0",
+  "author": "Ryo Hasegawa",
+  "license": "MIT",
+  "repository": "https://github.com/ryo8000/vscode-extension-template.git",
+  "keywords": [],
+  "private": true,
+  "engines": {
+    "node": ">=22.9.0"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "yo code"
+  },
+  "devDependencies": {
+    "generator-code": "1.11.18",
+    "yo": "7.0.1"
+  }
+}
