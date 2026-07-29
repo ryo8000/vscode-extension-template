@@ -21,7 +21,7 @@
     "start": "yo code"
   },
   "devDependencies": {
-    "generator-code": "1.11.18",
+    "generator-code": "1.12.0",
     "yo": "7.0.1"
   }
 }
