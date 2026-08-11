@@ -1,27 +1,59 @@
 {
-  "name": "vscode-extension-template",
-  "description": "A template repository for developing VS Code extensions using Yeoman generator-code",
-  "version": "1.0.0",
-  "author": "Ryo Hasegawa",
-  "license": "MIT",
-  "repository": "https://github.com/ryo8000/vscode-extension-template.git",
+  "name": "my-extension",
+  "displayName": "My Extension",
+  "description": "My VS Code extension",
+  "version": "0.0.1",
+  "publisher": "my-publisher",
+  "author": "Your Name",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/my-account/my-extension.git",
+  "icon": "",
   "keywords": [
     "vscode",
-    "extension",
-    "template",
-    "yeoman",
-    "generator"
+    "extension"
+  ],
+  "categories": [
+    "Other"
   ],
   "private": true,
   "engines": {
-    "node": "^20.17.0 || >=22.9.0"
+    "vscode": "^1.120.0"
   },
-  "type": "commonjs",
+  "main": "./dist/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "my-extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
   "scripts": {
-    "start": "yo code"
+    "check-types": "tsc --noEmit",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "watch": "npm-run-all -p watch:*",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "compile-tests": "tsc -p .",
+    "watch-tests": "tsc -p . --watch",
+    "pretest": "npm run compile-tests && npm run lint && node esbuild.js",
+    "test": "vscode-test",
+    "vscode:prepublish": "npm run package"
   },
   "devDependencies": {
-    "generator-code": "1.11.18",
-    "yo": "7.0.1"
+    "@types/vscode": "^1.120.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.56.1",
+    "eslint": "^9.39.3",
+    "esbuild": "^0.27.3",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
   }
 }
