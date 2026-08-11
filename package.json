@@ -1,15 +1,15 @@
 {
-  "name": "sample-extension",
-  "displayName": "sample-extension",
-  "description": "Sample Extension",
+  "name": "my-extension",
+  "displayName": "My Extension",
+  "description": "My VS Code extension",
   "version": "0.0.1",
-  "publisher": "ryo8000",
-  "author": "Ryo Hasegawa",
+  "publisher": "my-publisher",
+  "author": "Your Name",
   "license": "UNLICENSED",
-  "repository": "https://github.com/ryo8000/sample-extension.git",
+  "repository": "https://github.com/my-account/my-extension.git",
   "icon": "",
   "keywords": [
-    "sample",
+    "vscode",
     "extension"
   ],
   "categories": [
@@ -24,7 +24,7 @@
   "contributes": {
     "commands": [
       {
-        "command": "sample-extension.helloWorld",
+        "command": "my-extension.helloWorld",
         "title": "Hello World"
       }
     ]
